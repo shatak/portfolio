@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lato", serif;
+  scroll-behavior: smooth;
+  background-color: #212121;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 250ms ease-in-out;
+}
+a:hover {
+  font-weight: 900;
+}
+
+header {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #212121;
+}
+
+header div {
+  max-width: 1024px;
+  display: flex;
+  align-items: flex-end;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  font-size: 1.25em;
+  color: #f6c90e;
+  padding: 5px 5px;
+  margin: 5px 10px;
+}
+
+.subsection1 {
+  background-image: url("top2.jpg");
+  background-repeat: no-repeat;
+  background-color: #000;
+  min-height: 680px;
+}
+
+.subsection2 {
+  background-image: url("bottom2.jpg");
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #f6c90e;
+}
+
+.subtext {
+  margin-left: 50%;
+  padding-top: 5%;
+  max-width: 1024px;
+  color: #f6c90e;
+}
+
+.Submission {
+  font-style: 1.2em;
+  margin-left: 50%;
+  padding-left: 5%;
+  padding-right: 10%;
+  padding-top: 15%;
+  max-width: 1024px;
+  color: #f6c90e;
+}
+
+.submissioninfo {
+  padding: 2%;
+  font-size: 1.5em;
+  text-align: justify;
+  max-width: 1024px;
+}
+
+.subinfo {
+  font-size: 1em;
+}
+
+.subtitle {
+  padding: 2%;
+  font-size: 6em;
+}
+
+.jobtitle {
+  padding: 2%;
+  padding-top: 1%;
+  font-size: 3.5em;
+}
+
+.button {
+  margin-left: 10%;
+  margin-top: 15%;
+  display: flex;
+  gap: 5%;
+}
+
+button {
+  background-color: #3a4750;
+  color: #f9ce22;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.fbutton {
+  background-color: #3a4750;
+  color: #f9ce22;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+.fbutton:hover {
+  background-color: #f9ce22;
+  color: #3a4750;
+  transition: all 250ms ease-in-out;
+  text-decoration: solid;
+}
+
+button:hover {
+  background-color: #f9ce22;
+  color: #3a4750;
+  transition: all 250ms ease-in-out;
+  text-decoration: solid;
+}
+
+.subsection {
+  background-color: #d2af26;
+  padding: 5%;
+}
+
+.sectiontitle {
+  font-size: 4em;
+  text-align: center;
+  padding: 2%;
+  font-weight: 800;
+}
+
+.edulist {
+  display: flex;
+  gap: 2%;
+}
+
+.eduitem {
+  font-size: 2em;
+  position: relative;
+  padding: 5%;
+  width: 50%;
+  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #212121;
+  color: #fed11e;
+}
+
+h4 {
+  font-size: 0.8em;
+}
+.year {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.eduitem:hover {
+  box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.6);
+  transition: 250ms ease-in-out;
+}
+
+.req {
+  color: red;
+}
+
+#contact {
+  background-color: #212121;
+  color: #f6c90e;
+  display: flex;
+  gap: 2%;
+}
+
+.form {
+  background-color: #2d2d2d;
+  max-width: 1024px;
+  font-size: 1.2em;
+  padding: 5%;
+  max-width: 1024px;
+  margin-left: 10%;
+  display: flex;
+  gap: 2%;
+}
+
+/*
+responsive from here
+
+*/
+@media (max-width: 500px) {
+  html,
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+  }
+
+  nav ul li {
+    font-size: 1em;
+    color: #f6c90e;
+    padding: 5px 5px;
+    margin: 5px 10px;
+  }
+
+  .subtext {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 5%;
+    color: #f6c90e;
+  }
+
+  .Submission {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-style: 0.8em;
+    margin-top: 0%;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 2%;
+  }
+
+  .submissioninfo {
+    padding: 2%;
+    font-size: 1em;
+  }
+
+  .subinfo {
+    font-size: 1em;
+  }
+
+  .subtitle {
+    margin-left: 0%;
+    padding: 2%;
+    font-size: 3em;
+  }
+
+  .jobtitle {
+    padding: 2%;
+    padding-top: 1%;
+    font-size: 1.5em;
+  }
+
+  .button {
+    margin-left: 0%;
+    margin-top: 5%;
+    display: flex;
+    gap: 5%;
+  }
+
+  button {
+    background-color: #3a4750;
+    color: #f9ce22;
+    padding: 7px 16px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 800;
+  }
+
+  button:hover {
+    background-color: #f9ce22;
+    color: #3a4750;
+    transition: all 250ms ease-in-out;
+    text-decoration: solid;
+  }
+  .fbutton {
+    background-color: #3a4750;
+    color: #f9ce22;
+    padding: 7px 16px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 800;
+  }
+
+  .fbutton:hover {
+    background-color: #f9ce22;
+    color: #3a4750;
+    transition: all 250ms ease-in-out;
+    text-decoration: solid;
+  }
+  .subsection {
+    background-color: #d2af26;
+    padding: 5%;
+  }
+
+  .sectiontitle {
+    font-size: 2em;
+    text-align: center;
+    margin-left: 0px;
+    padding: 2%;
+    font-weight: 800;
+  }
+
+  .edulist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+  }
+
+  .eduitem {
+    font-size: 0.8em;
+    position: relative;
+    padding: 5%;
+    width: 50%;
+    box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #212121;
+    color: #fed11e;
+  }
+
+  h4 {
+    font-size: 0.5em;
+  }
+  .year {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+  }
+
+  .eduitem:hover {
+    box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.6);
+    transition: 250ms ease-in-out;
+  }
+
+  .req {
+    color: red;
+  }
+
+  #contact {
+    background-color: #212121;
+    color: #f6c90e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+  }
+
+  .form {
+    background-color: #2d2d2d;
+    font-size: 0.8em;
+    padding: 5%;
+    margin-left: 1%;
+    display: flex;
+    gap: 2%;
+  }
+}

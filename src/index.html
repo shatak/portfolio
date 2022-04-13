@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Akshat Jain Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <nav>
+          <ul>
+            <a href="#about"><li>About Me</li></a>
+            <a href="#edu"><li>Education</li></a>
+            <a href="#contact"><li>Contact Me</li></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="subsection1" id="about">
+      <div class="subtext">
+        <div class="subtitle">
+          Hi! My name is <span id="name">Akshat</span>.
+        </div>
+        <div class="jobtitle">I am a Web Designer</div>
+        <div class="button">
+          <a href="./AkshatJain_Resume.pdf" download="Resume_AkshatJain"
+            ><button>Resume</button></a
+          >
+          <a href="#contact"><button>Contact Me</button></a>
+        </div>
+      </div>
+    </section>
+    <section class="subsection2" id="about">
+      <div class="Submission">
+        <div class="submissioninfo">
+          <span class="subinfo">Name: Akshat Jain</span> <br />
+          <span class="subinfo">Date: April 13, 2022</span><br />
+          <span class="subinfo">Course: WEB222</span><br />
+          <span class="subinfo">Section: NHH</span><br />
+          <span class="subinfo">Professor: Muath Alzghool</span>
+        </div>
+        <div class="submissioninfo">
+          <p>
+            I declare that my assessment is wholly my own work in accordance
+            with Seneca Academic Policy. No part of this assessment has been
+            copied manually or electronically from any other source (including
+            web sites) except for the information supplied by the WEB222
+            instructors and / or made available in this assessment for my use. I
+            also declare that no part of this assignment has been distributed to
+            other students.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="subsection" id="edu">
+      <div class="sectiontitle">Education</div>
+      <div class="edulist">
+        <div class="eduitem">
+          <h3>Ontario Graduate Diploma</h3>
+          <h4>Seneca College <span class="year">2021 - Present</span></h4>
+        </div>
+        <div class="eduitem">
+          <h3>B.Tech Computer Science and Design</h3>
+          <h4>
+            IIITD (Indraprastha Institute of Information Technology Delhi)<span
+              class="year"
+              >2017 - 2021</span
+            >
+          </h4>
+        </div>
+        <div class="eduitem">
+          <h3>High School</h3>
+          <h4>Ramjas School R.K. Puram<span class="year">2015 - 2017</span></h4>
+        </div>
+      </div>
+    </section>
+    <section class="subsection" id="contact">
+      <div class="sectiontitle">Contact Me</div>
+      <div class="form">
+        <form id="form" action="https://httpbin.org/post" method="post">
+          <p>
+            <label for="name"><span class="req">*</span> Name</label>
+            <input type="text" id="name" name="name" tabindex="1" required />
+          </p>
+
+          <p>
+            <label for="emailid"><span class="req">*</span> Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              tabindex="2"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="address"><span class="req">*</span> Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              tabindex="3"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="city"><span class="req">*</span> City</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              list="Cities"
+              tabindex="4"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="post"><span class="req">*</span> Postal Code</label>
+            <input
+              type="text"
+              id="post"
+              name="post"
+              tabindex="5"
+              placeholder="MXY 1AB"
+              pattern="^[A-Za-z]\d[A-Za-z][ ]\d[A-Za-z]\d$"
+              required
+            />
+          </p>
+
+          <label for="Query Info"
+            ><span class="req">*</span>What is this about?</label
+          >
+          <br />
+          <p>
+            <input
+              type="radio"
+              id="Question"
+              value="Question"
+              name="Question"
+              tabindex="6"
+            />
+            <label for="Query Info">Question</label>
+
+            <input
+              type="radio"
+              id="Comment"
+              value="Question"
+              name="Comment"
+              tabindex="7"
+            />
+            <label for="Query Info">Comment</label>
+
+            <input
+              type="radio"
+              id="hire"
+              value="Hiring"
+              name="Hiring"
+              tabindex="8"
+            />
+            <label for="Query Info">Hiring</label><br />
+          </p>
+
+          <label for="Message"><span class="req">*</span>Message</label><br />
+          <textarea
+            name="message"
+            id="message"
+            cols="40"
+            rows="10"
+            tabindex="9"
+            placeholder="Message"
+          ></textarea>
+          <br />
+          <br />
+
+          <input class="fbutton" type="submit" name="submit" id="submit" />
+
+          <input class="fbutton" type="reset" name="clear" id="clear" />
+
+          <datalist id="Cities">
+            <option value="Toronto"></option>
+            <option value="Montréal"></option>
+            <option value="Vancouver"></option>
+            <option value="Ottawa"></option>
+            <option value="Edmonton"></option>
+            <option value="Calgary"></option>
+            <option value="Quebéc"></option>
+            <option value="Winnipeg"></option>
+            <option value="Hamilton"></option>
+            <option value="London"></option>
+            <option value="Kitchener"></option>
+            <option value="St Catharines-Niagara"></option>
+            <option value="Halifax"></option>
+            <option value="Victoria"></option>
+            <option value="Windsor"></option>
+            <option value="Oshawa"></option>
+            <option value="Saskatoon"></option>
+            <option value="Regina"></option>
+            <option value="Sudbury"></option>
+            <option value="Chicoutimi"></option>
+            <option value="Sherbrooke"></option>
+            <option value="Kelowna"></option>
+            <option value="Kingston"></option>
+            <option value="Abbotsford"></option>
+            <option value="Barrie"></option>
+            <option value="Sydney"></option>
+          </datalist>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
